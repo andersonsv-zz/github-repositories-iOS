@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6041EB9524AD15A90042566A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6041EB9424AD15A90042566A /* AppDelegate.swift */; };
-		6041EB9724AD15A90042566A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6041EB9624AD15A90042566A /* SceneDelegate.swift */; };
-		6041EB9924AD15A90042566A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6041EB9824AD15A90042566A /* ViewController.swift */; };
-		6041EB9C24AD15A90042566A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6041EB9A24AD15A90042566A /* Main.storyboard */; };
+		6041EB9924AD15A90042566A /* RepositoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6041EB9824AD15A90042566A /* RepositoryController.swift */; };
 		6041EB9E24AD15AB0042566A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6041EB9D24AD15AB0042566A /* Assets.xcassets */; };
 		6041EBA124AD15AB0042566A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6041EB9F24AD15AB0042566A /* LaunchScreen.storyboard */; };
 		6041EBAC24AD15AB0042566A /* githubrepositoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6041EBAB24AD15AB0042566A /* githubrepositoriesTests.swift */; };
@@ -42,9 +40,7 @@
 /* Begin PBXFileReference section */
 		6041EB9124AD15A90042566A /* githubrepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = githubrepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6041EB9424AD15A90042566A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6041EB9624AD15A90042566A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6041EB9824AD15A90042566A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6041EB9B24AD15A90042566A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6041EB9824AD15A90042566A /* RepositoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryController.swift; sourceTree = "<group>"; };
 		6041EB9D24AD15AB0042566A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6041EBA024AD15AB0042566A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6041EBA224AD15AB0042566A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,12 +105,10 @@
 		6041EB9324AD15A90042566A /* githubrepositories */ = {
 			isa = PBXGroup;
 			children = (
+				60FFD9C324AF72FA0027507D /* Repository */,
 				6041EBD624AD6ABB0042566A /* Networking */,
 				6041EBD124AD21C50042566A /* Model */,
 				6041EB9424AD15A90042566A /* AppDelegate.swift */,
-				6041EB9624AD15A90042566A /* SceneDelegate.swift */,
-				6041EB9824AD15A90042566A /* ViewController.swift */,
-				6041EB9A24AD15A90042566A /* Main.storyboard */,
 				6041EB9D24AD15AB0042566A /* Assets.xcassets */,
 				6041EB9F24AD15AB0042566A /* LaunchScreen.storyboard */,
 				6041EBA224AD15AB0042566A /* Info.plist */,
@@ -155,6 +149,14 @@
 				6041EBD724AD6B010042566A /* RepositoryApi.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		60FFD9C324AF72FA0027507D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				6041EB9824AD15A90042566A /* RepositoryController.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +272,6 @@
 			files = (
 				6041EBA124AD15AB0042566A /* LaunchScreen.storyboard in Resources */,
 				6041EB9E24AD15AB0042566A /* Assets.xcassets in Resources */,
-				6041EB9C24AD15A90042566A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,9 +296,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6041EB9924AD15A90042566A /* ViewController.swift in Sources */,
+				6041EB9924AD15A90042566A /* RepositoryController.swift in Sources */,
 				6041EB9524AD15A90042566A /* AppDelegate.swift in Sources */,
-				6041EB9724AD15A90042566A /* SceneDelegate.swift in Sources */,
 				6041EBD524AD22B90042566A /* Owner.swift in Sources */,
 				6041EBD824AD6B010042566A /* RepositoryApi.swift in Sources */,
 				6041EBD324AD22170042566A /* Repository.swift in Sources */,
@@ -336,14 +336,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6041EB9A24AD15A90042566A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6041EB9B24AD15A90042566A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6041EB9F24AD15AB0042566A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -476,14 +468,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z28N59729C;
 				INFOPLIST_FILE = githubrepositories/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.andersonsv.githubrepositories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -494,14 +488,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z28N59729C;
 				INFOPLIST_FILE = githubrepositories/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.andersonsv.githubrepositories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
