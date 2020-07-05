@@ -11,6 +11,13 @@ import Foundation
 struct Repository: Codable {
     let name: String
     let stars: UInt
-    let image: URL
     let owner: Owner
+    
+    enum CodingKeys: String, CodingKey {
+        case name = "name"
+        case stars = "stargazers_count"
+        case owner = "owner"
+    }
+    
+    
 }
