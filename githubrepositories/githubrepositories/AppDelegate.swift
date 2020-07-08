@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if let window = window {
             let repositoryViewController = RepositoryViewController()
-            
+            repositoryViewController.reactor = RepositoryViewReactor()
             window.rootViewController = UINavigationController(rootViewController: repositoryViewController)
             window.makeKeyAndVisible()
         }

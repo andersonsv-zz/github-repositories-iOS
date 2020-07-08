@@ -18,6 +18,7 @@
 		6041EBD324AD22170042566A /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6041EBD224AD22170042566A /* Repository.swift */; };
 		6041EBD524AD22B90042566A /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6041EBD424AD22B90042566A /* Owner.swift */; };
 		6041EBD824AD6B010042566A /* RepositoryApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6041EBD724AD6B010042566A /* RepositoryApi.swift */; };
+		6057447324B544B5001C1E1A /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6057447224B544B5001C1E1A /* RepositoryTableViewCell.swift */; };
 		60639A0624AFC89D00A99A3A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60639A0524AFC89D00A99A3A /* UIViewExtension.swift */; };
 		60A46FF124B14B8A00E7BEA5 /* RepositoryViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A46FF024B14B8A00E7BEA5 /* RepositoryViewReactor.swift */; };
 		60EE7E8C24B24EDC001783A4 /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 60EE7E8B24B24EDC001783A4 /* ReactorKit */; };
@@ -41,7 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6041EB9124AD15A90042566A /* githubrepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = githubrepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6041EB9124AD15A90042566A /* SwiftHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6041EB9424AD15A90042566A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6041EB9824AD15A90042566A /* RepositoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryController.swift; sourceTree = "<group>"; };
 		6041EB9D24AD15AB0042566A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		6041EBD224AD22170042566A /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		6041EBD424AD22B90042566A /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		6041EBD724AD6B010042566A /* RepositoryApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryApi.swift; sourceTree = "<group>"; };
+		6057447224B544B5001C1E1A /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 		60639A0524AFC89D00A99A3A /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		60A46FF024B14B8A00E7BEA5 /* RepositoryViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewReactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,7 +103,7 @@
 		6041EB9224AD15A90042566A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6041EB9124AD15A90042566A /* githubrepositories.app */,
+				6041EB9124AD15A90042566A /* SwiftHub.app */,
 				6041EBA724AD15AB0042566A /* githubrepositoriesTests.xctest */,
 				6041EBB224AD15AB0042566A /* githubrepositoriesUITests.xctest */,
 			);
@@ -171,6 +173,7 @@
 			children = (
 				6041EB9824AD15A90042566A /* RepositoryController.swift */,
 				60A46FF024B14B8A00E7BEA5 /* RepositoryViewReactor.swift */,
+				6057447224B544B5001C1E1A /* RepositoryTableViewCell.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -197,7 +200,7 @@
 				60EE7E8B24B24EDC001783A4 /* ReactorKit */,
 			);
 			productName = githubrepositories;
-			productReference = 6041EB9124AD15A90042566A /* githubrepositories.app */;
+			productReference = 6041EB9124AD15A90042566A /* SwiftHub.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6041EBA624AD15AB0042566A /* githubrepositoriesTests */ = {
@@ -317,6 +320,7 @@
 				60A46FF124B14B8A00E7BEA5 /* RepositoryViewReactor.swift in Sources */,
 				60639A0624AFC89D00A99A3A /* UIViewExtension.swift in Sources */,
 				6041EB9924AD15A90042566A /* RepositoryController.swift in Sources */,
+				6057447324B544B5001C1E1A /* RepositoryTableViewCell.swift in Sources */,
 				6041EB9524AD15A90042566A /* AppDelegate.swift in Sources */,
 				6041EBD524AD22B90042566A /* Owner.swift in Sources */,
 				6041EBD824AD6B010042566A /* RepositoryApi.swift in Sources */,
@@ -495,7 +499,7 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.andersonsv.githubrepositories;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftHub;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -515,7 +519,7 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.andersonsv.githubrepositories;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftHub;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
